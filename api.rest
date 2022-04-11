@@ -1,0 +1,27 @@
+###
+GET http://localhost:4000/api/employees
+
+###
+GET http://localhost:4000/api/employees/62537a7f4ea64122c74bf0ca
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+  "name": "Martin Tolkien",
+  "position": "Jr. Developer",
+  "office": "San Francisco",
+  "salary": 30000
+}
+
+###
+PUT http://localhost:4000/api/employees/62537a7f4ea74122c74bf0ca
+Content-Type: application/json
+
+{
+  "salary": 3500
+}
+
+###
+DELETE http://localhost:4000/api/employees/62537a03e20726478d9a001b
